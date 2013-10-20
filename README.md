@@ -13,6 +13,8 @@ Change the path to sdcard.img in host/setup.sh
 
 ### Notes
 
+setup.sh must be run after every reboot. After that, you can simply run mount and umount.
+
 These scripts must be run in bash, and require sudo.
 So, for example, you would need to type `sudo bash mount.sh` to mount.
 Note that bash need not be the current shell; I use zsh.
