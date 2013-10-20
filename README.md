@@ -33,11 +33,19 @@ While you're there, why not add this alias as well? Again, change the paths as a
     alias q="qemu-system-arm -nographic -M verdex -pflash flash.img -sd sdcard.img"
 
 ## Gumstix
+
+### Setup
 Move the scripts folder as well as the .bashrc file to trhe home folder.
 The .bashrc file would be hidden, so use `ls -a` to make sure it's there.
 
-Then, type
+Then, to set it up, type
 
     source ~/.bashrc
 
-To set it up. Then onwards, you can mount and un-mount the card from the gumstix simply by typing `m` or `u`.
+### Usage
+
+Once set up, you can mount and un-mount the card from the gumstix simply by typing `m` or `u`.
+
+
+## Credits
+The commands for mounting and unmounting (as used in the scripts) are from the Lab1 handout.
