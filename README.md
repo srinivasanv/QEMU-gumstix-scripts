@@ -1,7 +1,11 @@
 QEMU-gumstix-scripts
 ====================
+I made these because I found it to be more convenient than typing 
+`sudo mount /dev/loop0p1 /media/bootfs` 
+each time I wanted to mount the card on the host. I'm sharing this 
+because others in the class might find this convenient as well.
 
-Setup: Change the path to sdcard.img in host/setup.sh
+*Setup:* Change the path to sdcard.img in host/setup.sh
 
 These scripts must be run in bash, and require sudo.
 So, for example, you would need to type `sudo bash mount.sh` to mount.
