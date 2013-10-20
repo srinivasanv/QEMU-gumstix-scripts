@@ -4,7 +4,7 @@ QEMU-gumstix-scripts
 Setup: Change the path to sdcard.img in host/setup.sh
 
 These scripts must be run in bash, and require sudo.
-So, for example, you would need to type "sudo bash mount.sh" to mount.
+So, for example, you would need to type `sudo bash mount.sh` to mount.
 Note that bash need not be the current shell; I use zsh.
 
 For convenience, I would suggest adding alisases to these scripts, like so:
