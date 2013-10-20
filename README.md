@@ -1,15 +1,19 @@
 QEMU-gumstix-scripts
 ====================
 I made these because I found it to be more convenient than typing 
-`sudo mount /dev/loop0p1 /media/bootfs` 
+`sudo mount /dev/mapper/loop0p1 /media/bootfs` 
 each time I wanted to mount the card on the host. I'm sharing this 
 because others in the class might find this convenient as well.
 
-##Setup
+## Host
+
+### Setup
 
 Change the path to sdcard.img in host/setup.sh
 
-##Notes
+### Notes
+
+setup.sh must be run after every reboot. After that, you can simply run mount.sh and umount.sh
 
 These scripts must be run in bash, and require sudo.
 So, for example, you would need to type `sudo bash mount.sh` to mount.
@@ -24,5 +28,9 @@ For convenience, **I would suggest adding alisases to these scripts**, like so:
 That should work with both bash and zsh, in their respective rc files.
 Change the path as appropriate, and the alias names as preferred.
 
-Mounting and unmounting on the emulated gumstix system: coming soon.
+While you're there, why not add this alias as well? Again, change the paths as appropriate.
 
+    alias q="qemu-system-arm -nographic -M verdex -pflash flash.img -sd sdcard.img"
+
+## Gumstix
+Mounting and unmounting on the emulated gumstix system: coming soon.
